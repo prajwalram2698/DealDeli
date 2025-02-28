@@ -1,4 +1,5 @@
 DealDeli
+
 1.Problem Statement:
 Indian students living in the UK face challenges in finding affordable groceries and familiar Indian products across multiple stores. They lack a centralized platform to compare prices and availability of Indian grocery items, leading to time-consuming searches and potentially higher expenses. Our web app aims to solve this issue by providing a comprehensive price comparison tool for Indian groceries across various UK supermarkets and specialty stores, helping students save money and easily find the products they need.
 Key aspects of the problem:
