@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request,render_template
 import json
 import os
 from flask_sqlalchemy import SQLAlchemy
@@ -14,6 +14,10 @@ db_path = os.path.join(base_dir, '..', 'databases', 'products.db')
 app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{db_path}"
 db = SQLAlchemy(app)
 
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
 @app.route("/")
 def db_check():
     try:
@@ -25,19 +29,24 @@ def db_check():
 
 @app.route("/compare")
 def compare_product():
-    # Get the product name from the query parameters
+
     query_name = request.args.get("name")
     if not query_name:
         return jsonify({"error": "Please provide a product name using ?name="}), 400
-
-    # SQL query to find products with similar names (case-insensitive)
+    
     sql = text("""
-        SELECT *
+        SELECT 
+            name, 
+            price, 
+            category, 
+            image_url AS image, 
+            url AS link
         FROM products
-        WHERE name LIKE :pattern
+        WHERE LOWER(name) LIKE :pattern
         ORDER BY price ASC
     """)
-    pattern = f"%{query_name}%"
+    pattern = f"%{query_name.lower()}%"
+
     try:
         result = db.session.execute(sql, {"pattern": pattern})
         products = [dict(row._mapping) for row in result]
@@ -46,7 +55,27 @@ def compare_product():
 
     return jsonify(products)
 
-    
+# compare?name=apple
+
+# @app.route("/products")
+# def get_all_products():
+#     try:
+#         sql = text("""
+#             SELECT 
+#                 name, 
+#                 price, 
+#                 category, 
+#                 image_url AS image, 
+#                 url AS link
+#             FROM products
+#             ORDER BY name ASC
+#         """)
+#         result = db.session.execute(sql)
+#         products = [dict(row._mapping) for row in result]
+#         return jsonify(products)
+#     except Exception as e:
+#         return jsonify({"error": str(e)}), 500
+
 # # USE HELPER FUNCTION HERE
 
 # with open(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")), "databases", "aldi_data.json")) as file:
