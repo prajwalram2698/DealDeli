@@ -107,42 +107,53 @@
      <div class="products-container" id="productsContainer"></div>
  
      <script>
-         document.getElementById('searchForm').addEventListener('submit', async function(e) {e.preventDefault();
-    const query = document.getElementById('searchInput').value;
-    const response = await fetch(`http://127.0.0.1:5000/compare?name=${encodeURIComponent(query)}`);
-    const data = await response.json();
+    document.getElementById('searchForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
 
-    const container = document.getElementById('productsContainer');
-    container.innerHTML = "";
+        const query = document.getElementById('searchInput').value;
+        const userEmail = "demo@user.com";  // Replace this with dynamic logic later
 
-    if (data.length === 0) {
-        container.innerHTML = "<p>No products found.</p>";
-        return;
-    }
+        // Step 1: Get search results
+        const response = await fetch(`http://127.0.0.1:5000/compare?name=${encodeURIComponent(query)}`);
+        const data = await response.json();
 
-    data.forEach((product, index) => {
-    const box = document.createElement("div");
-    box.className = "product-box";
+        // Step 2: Log search to analytics
+        await fetch("http://127.0.0.1:5003/analytics/log_search", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                product_name: query,
+                user_email: userEmail
+            })
+        });
 
-    // Determine price color based on index
-    let priceColor = "orange"; // default for products in the middle
+        // Step 3: Render products
+        const container = document.getElementById('productsContainer');
+        container.innerHTML = "";
 
-    if (index === 0) {
-        priceColor = "green"; // cheapest
-    } else if (index === data.length - 1) {
-        priceColor = "red";   // most expensive
-    }
+        if (data.length === 0) {
+            container.innerHTML = "<p>No products found.</p>";
+            return;
+        }
 
-    box.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <a href="${product.link}" target="_blank">${product.name}</a>
-        <div class="price" style="color:${priceColor}">£${product.price.toFixed(2)}</div>
-    `;
-    container.appendChild(box);
-});
-});
+        data.forEach((product, index) => {
+            const box = document.createElement("div");
+            box.className = "product-box";
 
-     </script>
+            let priceColor = "orange";
+            if (index === 0) priceColor = "green";
+            else if (index === data.length - 1) priceColor = "red";
+
+            box.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <a href="${product.link}" target="_blank">${product.name}</a>
+                <div class="price" style="color:${priceColor}">£${parseFloat(product.price).toFixed(2)}</div>
+            `;
+            container.appendChild(box);
+        });
+    });
+</script>
+
  </body>
  </html>
- 
+
