@@ -1,3 +1,4 @@
+# first source venv/bin/activate
 # flask --app app run
 
 from flask import Flask, jsonify, request,render_template
