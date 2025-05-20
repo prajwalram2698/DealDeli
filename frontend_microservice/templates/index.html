@@ -1,196 +1,124 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Product Search</title>
+    <meta charset="UTF-8">
+    <title>DealDeli - Grocery Price Comparison </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Search for a Product</h1>
+
+<!-- Navigation Bar -->
+<nav>
+     <div class="nav-left">
+    <div id="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="DealDeli Logo" />
+      </a>
+    </div>
+
+     <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+     </div>
+    
     <form id="searchForm">
         <input type="text" id="searchInput" placeholder="Enter product name" required>
         <button type="submit">Search</button>
     </form>
 
-    <script>
-        document.getElementById('searchForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const query = document.getElementById('searchInput').value;
-            if (query.trim() !== "") {
-                window.location.href = `http://127.0.0.1:5000/compare?name=${encodeURIComponent(query)}`;
+    <!-- Login/Register -->
+  <!-- ✅ Auth Dropdown aligned top right -->
+<div class="auth-wrapper">
+  <div class="auth-dropdown">
+    <button class="auth-btn">
+      <i class="bi bi-person-circle"></i> Account ▼
+    </button>
+    <div class="auth-menu">
+      <a href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+      <a href="#"><i class="bi bi-person-plus"></i> Register</a>
+      <a href="#"><i class="bi bi-pencil-square"></i> Sign Up</a>
+    </div>
+  </div>
+</div>
+</nav>
+
+<!-- ✅ Sidebar -->
+<div id="sidebar" class="sidebar">
+  <button class="close-btn" onclick="toggleSidebar()">×</button>
+  <a href="#">Fresh Food</a>
+  <a href="#">Dairy</a>
+  <a href="#">Meat & Poultry</a>
+  <a href="#">Health & Beauty</a>
+  <a href="#">Household</a>
+</div>
+
+
+<!-- Product Display Area -->
+<div class="products-container" id="productsContainer"></div>
+
+<!-- Script (unchanged from your original logic) -->
+<script>
+    document.getElementById('searchForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const query = document.getElementById('searchInput').value;
+        const userEmail = "demo@user.com";
+
+        try {
+            const response = await fetch(`http://127.0.0.1:5000/compare?name=${encodeURIComponent(query)}`);
+            const data = await response.json();
+
+            await fetch("http://127.0.0.1:5003/analytics/log_search", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    product_name: query,
+                    user_email: userEmail
+                })
+            });
+
+            const container = document.getElementById('productsContainer');
+            container.innerHTML = "";
+
+            if (data.length === 0) {
+                container.innerHTML = "<p>No products found.</p>";
+                return;
             }
-        });
-    </script>
-</body>
-</html> -->
 
+            data.forEach((product, index) => {
+                const box = document.createElement("div");
+                box.className = "product-box";
 
+                let priceColor = "orange";
+                if (index === 0) priceColor = "green";
+                else if (index === data.length - 1) priceColor = "red";
 
+                box.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <a href="${product.link}" target="_blank">${product.name}</a>
+                    <div class="price" style="color:${priceColor}">£${parseFloat(product.price).toFixed(2)}</div>
+                `;
+                container.appendChild(box);
+            });
+        } catch (error) {
+            console.error("Error fetching products:", error);
+            document.getElementById('productsContainer').innerHTML = "<p>Error loading products.</p>";
+        }
+    });
+</script>
 
- <!DOCTYPE html>
- <html>
- <head>
-     <title>Product Search</title>
-     <style>
-         body {
-             font-family: Arial, sans-serif;
-             padding: 2rem;
-         }
- 
-         h1 {
-             text-align: center;
-         }
- 
-         form {
-             text-align: center;
-             margin-bottom: 2rem;
-         }
- 
-         #searchInput {
-             padding: 0.5rem;
-             width: 300px;
-             font-size: 1rem;
-         }
- 
-         button {
-             padding: 0.5rem 1rem;
-             font-size: 1rem;
-         }
- 
-         .products-container {
-             display: flex;
-             flex-wrap: wrap;
-             gap: 1.5rem;
-             justify-content: center;
-         }
- 
-         .product-box {
-             width: 200px;
-             border: 1px solid #ccc;
-             border-radius: 8px;
-             padding: 1rem;
-             text-align: center;
-             box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-         }
- 
-         .product-box img {
-             width: 100%;
-             height: auto;
-             border-radius: 6px;
-         }
- 
-         .product-box a {
-             display: block;
-             font-weight: bold;
-             margin-top: 0.5rem;
-             text-decoration: none;
-             color: #0077cc;
-         }
- 
-         .product-box a:hover {
-             text-decoration: underline;
-         }
- 
-         .price {
-             margin-top: 0.5rem;
-             font-size: 1.1rem;
-             color: green;
-         }
-     </style>
- </head>
- <body>
-     <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <!-- Hamburger Icon -->
-      <div id="hamburger-menu" class="icon" onclick="toggleSidebar()">
-        <i class="fa fa-bars"></i>
-      </div>
-
-      <!-- Logo -->
-      <div id="logo">
-        <a href="index.html">
-          <img src="logo.png" alt="DealDeli Logo" />
-          <span>DealDeli</span>
-        </a>
-      </div>
-
-      <!-- Search Bar -->
-      <div id="search-bar">
-        <input type="text" placeholder="Search for products..." />
-        <button>Search</button>
-      </div>
-
-      <!-- User Icon -->
-      <div id="user-console">
-        <div class="user-icon">
-          <i class="fas fa-user"></i>
-        </div>
-        <div class="user-text">
-          <div class="login-signup">
-            <a href="login.html">Login / Signup</a>
-          </div>
-          <div class="my-account">
-            My account <i class="fas fa-caret-down"></i>
-          </div>
-        </div>
-      </div>  
-    </nav>
-  </header>
-
-    <!-- Slide-Out Sidebar (hidden by default) -->
-    <div id="sidebar">
-        <ul>
-            <li class="dropdown-container">
-                <a href="javascript:void(0)" onclick="toggleCategoriesDropdown(event)">Browse Categories</a>
-                <div class="categories-dropdown">
-                  <div class="dropdown-header">
-                    <a href="javascript:void(0)" class="back-button" onclick="toggleCategoriesDropdown(event)">&larr; Back</a>
-                    <h2>Categories</h2>
-                  </div>
-                  <ul class="categories-list">
-                    <li><a href="#">Fresh Food</a></li>
-                    <li><a href="#">Health &amp; Beauty</a></li>
-                    <li><a href="#">Meat &amp; Poultry</a></li>
-                    <li><a href="#">Household</a></li>
-                    <li><a href="#">Dairy</a></li>
-                    <li><a href="#">Food &amp; Beverage</a></li>
-                  </ul>
-                </div>
-              </li>              
-              <li><a href="index.html">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li class="dropdown-container brands">
-            <a href="javascript:void(0)" onclick="toggleBrandsDropdown(event)">Brands</a>
-            <div class="brands-dropdown">
-              <div class="dropdown-header">
-                <a href="javascript:void(0)" class="back-button" onclick="toggleBrandsDropdown(event)">&larr; Back</a>
-                <h2>Brands</h2>
-              </div>
-              <ul class="brands-list">
-                <li><a href="#">Tesco</a></li>
-                <li><a href="#">Sainsbury's</a></li>
-                <li><a href="https://groceries.asda.com/product/apples/asda-sweet-juicy-royal-gala-apples/910002849510
-                  ">ASDA</a></li>
-                <li><a href="#">Aldi</a></li>
-              </ul>
-            </div>
-          </li>          
-        </ul>
-    </div> 
-
-
-
-
-
-
-    
-      <!--Products Display-->
+ <!--Products Display-->
       <section id="collections">
         <h2>Our Collections</h2>
         <div class="collection-row">
           <!-- Category 1 -->
           <div class="collection-item">
             <div class="image-container">
-              <img src="assests/images/freshfood.jpg" alt="Fresh Food" />
+              <img src="assests/freshfood.jpg" alt="Fresh Food" />
             </div>
             <h3>Fresh Food</h3>
           </div>
@@ -198,7 +126,7 @@
           <!-- Category 2 -->
           <div class="collection-item">
             <div class="image-container">
-              <img src="assests/images/dairy.jpg" alt="Dairy" />
+              <img src="assests/dairy.jpg" alt="Dairy" />
             </div>
             <h3>Dairy</h3>
           </div>
@@ -206,68 +134,36 @@
           <!-- Category 3 -->
           <div class="collection-item">
             <div class="image-container">
-              <img src="assests/images/meatandpoultry.jpg" alt="Poultry & Meat" />
+              <img src="assests/meatandpoultry.jpg" alt="Poultry & Meat" />
             </div>
             <h3>Poultry & Meat</h3>
           </div>
       
-     <h1>Search for a Product</h1>
- 
-     <form id="searchForm">
-         <input type="text" id="searchInput" placeholder="Enter product name" required>
-         <button type="submit">Search</button>
-     </form>
- 
-     <div class="products-container" id="productsContainer"></div>
- 
-     <script>
-    document.getElementById('searchForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        const query = document.getElementById('searchInput').value;
-        const userEmail = "demo@user.com";  // Replace this with dynamic logic later
-
-        // Step 1: Get search results
-        const response = await fetch(`http://127.0.0.1:5000/compare?name=${encodeURIComponent(query)}`);
-        const data = await response.json();
-
-        // Step 2: Log search to analytics
-        await fetch("http://127.0.0.1:5003/analytics/log_search", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                product_name: query,
-                user_email: userEmail
-            })
-        });
-
-        // Step 3: Render products
-        const container = document.getElementById('productsContainer');
-        container.innerHTML = "";
-
-        if (data.length === 0) {
-            container.innerHTML = "<p>No products found.</p>";
-            return;
-        }
-
-        data.forEach((product, index) => {
-            const box = document.createElement("div");
-            box.className = "product-box";
-
-            let priceColor = "orange";
-            if (index === 0) priceColor = "green";
-            else if (index === data.length - 1) priceColor = "red";
-
-            box.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <a href="${product.link}" target="_blank">${product.name}</a>
-                <div class="price" style="color:${priceColor}">£${parseFloat(product.price).toFixed(2)}</div>
-            `;
-            container.appendChild(box);
-        });
-    });
-</script>
-
- </body>
- </html>
-
+          <!-- Category 4 -->
+          <div class="collection-item">
+            <div class="image-container">
+              <img src="assests/foodandbeverage.jpg" alt="Food & Beverages" />
+            </div>
+            <h3>Food & Beverages</h3>
+          </div>
+      
+          <!-- Category 5 -->
+          <div class="collection-item">
+            <div class="image-container">
+              <img src="assests/h&b.jpg" alt="Health & Beauty" />
+            </div>
+            <h3>Health & Beauty</h3>
+          </div>
+      
+          <!-- Category 6 -->
+          <div class="collection-item">
+            <div class="image-container">
+              <img src="assests/household.jpg" alt="Household" />
+            </div>
+            <h3>Household</h3>
+          </div>
+        </div>
+      </section>    
+      
+</body>
+</html>
