@@ -5,5 +5,5 @@ def get_connection():
         host="localhost",
         user="root",
         password="UoS@2025",
-        database="DealDeli_data"
+        database="dealdeli"
     )

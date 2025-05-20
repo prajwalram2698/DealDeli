@@ -1,5 +1,5 @@
-# first source venv/bin/activate
-# then python3 app.py and go to this url: http://127.0.0.1:5003/dashboard
+# first venv\Scripts\activate
+# then python app.py and go to this url: http://127.0.0.1:5003/dashboard
 
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
