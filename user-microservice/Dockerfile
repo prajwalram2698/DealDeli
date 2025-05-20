@@ -16,6 +16,7 @@ COPY . .
 # Expose port 5000 (Flask default)
 EXPOSE 5000
 
+
 # Set environment variables so Flask runs on 0.0.0.0 and knows the app file
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_APP=app.py
