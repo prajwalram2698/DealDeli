@@ -1,3 +1,4 @@
+# first venv\Scripts\activate
 # flask --app app run
 
 from flask import Flask, jsonify, request,render_template
@@ -13,7 +14,7 @@ CORS(app)
 
 base_dir = os.path.abspath(os.path.dirname(__file__))
 db_path = os.path.join(base_dir, '..', 'databases', 'products.db')
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:UoS%402025@localhost/DealDeli_data"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:UoS%402025@localhost/dealdeli"
 db = SQLAlchemy(app)
 
 @app.route("/index")
