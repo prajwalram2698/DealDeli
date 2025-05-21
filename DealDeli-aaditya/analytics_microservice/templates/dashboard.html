@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DealDeli Analytics Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-content">
+        <img src="/static/Dealdeli_Logo.jpg" alt="DealDeli Logo" class="logo">
+        <h1 class="site-title">DealDeli Analytics Dashboard</h1>
+    </div>
+</header>
+
+<!-- Dashboard Cards -->
+<div class="dashboard-container">
+    <div class="card card-blue">
+        <h2>Total Searches</h2>
+        <p id="total-searches" class="count">Loading...</p>
+    </div>
+
+    <div class="card card-green">
+        <h2>Recent Searches</h2>
+        <ul id="recent-searches-list" class="search-list">
+            <li>Loading...</li>
+        </ul>
+    </div>
+
+    <div class="card card-orange">
+        <h2>Top 5 Viewed Products</h2>
+        <ul id="top-products-list" class="search-list">
+            <li>Loading...</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Charts Container -->
+<div class="charts-container">
+    <div class="chart-box">
+        <h2>Top 5 Products</h2>
+        <canvas id="topProductsChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>Category Distribution</h2>
+        <canvas id="categoryPieChart"></canvas>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
