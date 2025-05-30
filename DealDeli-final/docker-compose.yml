@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  user_microservice:
+    build: ./user_microservice
+    ports:
+      - "5001:5001"
+    environment:
+      MYSQL_HOST: host.docker.internal
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Welcom_praj@123
+      MYSQL_DATABASE: dealdeli_data
+    networks:
+      - dealdeli-net
+
+  price_microservice:
+    build: ./price_microservice
+    ports:
+      - "5002:5002"
+    environment:
+      MYSQL_HOST: host.docker.internal
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Welcom_praj@123
+      MYSQL_DATABASE: dealdeli_data
+    networks:
+      - dealdeli-net
+
+  analytics_microservice:
+    build: ./analytics_microservice
+    ports:
+      - "5003:5003"
+    environment:
+      MYSQL_HOST: host.docker.internal
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Welcom_praj@123
+      MYSQL_DATABASE: dealdeli_data
+    networks:
+      - dealdeli-net
+
+  frontend_microservice:
+    build: ./frontend_microservice
+    ports:
+      - "5501:8000"
+    networks:
+      - dealdeli-net
+
+networks:
+  dealdeli-net:
