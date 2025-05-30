@@ -1,6 +1,4 @@
 
-Here's a professionally written and thorough `README.md` file for your **DealDeli** project:
-
 ---
 
 # DealDeli
