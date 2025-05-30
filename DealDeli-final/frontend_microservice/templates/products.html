@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | DealDeli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons + Font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --dealdeli-green: #34c759;
+      --dealdeli-blue: #1e90ff;
+      --dealdeli-bg: #f6fef9;
+      --dealdeli-dark: #1a332a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--dealdeli-bg);
+      color: var(--dealdeli-dark);
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 3rem;
+      color: var(--dealdeli-green);
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--dealdeli-blue);
+      margin-bottom: 2.5rem;
+    }
+
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .product-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .product-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-box img {
+      max-width: 100%;
+      max-height: 160px;
+      border-radius: 12px;
+      object-fit: contain;
+      margin-bottom: 0.8rem;
+    }
+
+    .product-box a {
+      display: block;
+      font-weight: 600;
+      color: var(--dealdeli-dark);
+      text-decoration: none;
+      margin-bottom: 0.4rem;
+    }
+
+    .product-box a:hover {
+      text-decoration: underline;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Title -->
+  <div class="main-title">Browse Products</div>
+  <div class="subtitle">Find the best deals on your favorite grocery items.</div>
+
+  <!-- Products -->
+  <section class="products-container">
+    <div class="product-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Culinary_fruits_front_view.jpg/500px-Culinary_fruits_front_view.jpg" alt="Fruits & Vegetables">
+      <a href="#">Fruits & Vegetables</a>
+      <div class="price" style="color: green;">£2.99</div>
+    </div>
+    <div class="product-box">
+      <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg" alt="Dairy">
+      <a href="#">Dairy</a>
+      <div class="price" style="color: orange;">£1.50</div>
+    </div>
+    <div class="product-box">
+      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/30/10/istock-483027918.jpg" alt="Meat">
+      <a href="#">Meat</a>
+      <div class="price" style="color: red;">£5.25</div>
+    </div>
+    <div class="product-box">
+      <img src="https://www.keckmedicine.org/wp-content/uploads/2021/11/Household-cleaning-products.jpg" alt="Household">
+      <a href="#">Household</a>
+      <div class="price" style="color: orange;">£3.49</div>
+    </div>
+    <div class="product-box">
+      <img src="https://mahehealthcare.com/wp-content/uploads/elementor/thumbs/Mahe-Health-Care-Hospital-scaled-qbplcjlcuhp6gi01aexcrnwrvplz0ju27a8upbrgjg.jpg" alt="Healthcare">
+      <a href="#">Healthcare</a>
+      <div class="price" style="color: green;">£4.10</div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 DealDeli. All rights reserved.</footer>
+
+</body>
+</html>
