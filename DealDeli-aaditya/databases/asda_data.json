@@ -1,0 +1,452 @@
+[
+ {
+  "Product_id": 1,
+  "Product Name": "ASDA Sweet & Juicy Royal Gala Apples",
+  "Price in GBP": 1.49,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/apples\/asda-sweet-juicy-royal-gala-apples\/910002849510",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054781401285?fmt=webp"
+ },
+ {
+  "Product_id": 2,
+  "Product Name": "ASDA Organic 5 Fairtrade Bananas",
+  "Price in GBP": 1.34,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/bananas\/asda-organic-5-fairtrade-bananas\/1000128213094",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5057172029457?fmt=webp"
+ },
+ {
+  "Product_id": 3,
+  "Product Name": "ASDA Extra Special OrangeGold 4 Oranges",
+  "Price in GBP": 2.38,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/oranges-easy-peelers\/asda-extra-special-orange-gold-4-oranges\/1000383189947",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5063089133651?fmt=webp"
+ },
+ {
+  "Product_id": 4,
+  "Product Name": "ASDA Just Essentials Blueberries 150g",
+  "Price in GBP": 1.33,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/berries-cherries\/asda-just-essentials-blueberries-150-g\/1000383256495",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5063089708989?fmt=webp"
+ },
+ {
+  "Product_id": 5,
+  "Product Name": "ASDA Ripe & Sweet Strawberries 400g",
+  "Price in GBP": 3.28,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/berries-cherries\/asda-ripe-sweet-strawberries-400-g\/998058",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/27422915?fmt=webp"
+ },
+ {
+  "Product_id": 6,
+  "Product Name": "ASDA Sweet & Plump Raspberries",
+  "Price in GBP": 1.89,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/berries-cherries\/asda-sweet-plump-raspberries\/20384",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/23024861?fmt=webp"
+ },
+ {
+  "Product_id": 7,
+  "Product Name": "ASDA Creamy & Nutty Avocados",
+  "Price in GBP": 1.49,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/view-all-salads-stir-fry\/asda-creamy-nutty-avocados\/32811",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/0000023066755?fmt=webp"
+ },
+ {
+  "Product_id": 8,
+  "Product Name": "ASDA Crunchy & Sweet Carrots",
+  "Price in GBP": 0.69,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/carrots-root-vegetables\/asda-crunchy-sweet-carrots\/30240",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/23003507?fmt=webp"
+ },
+ {
+  "Product_id": 9,
+  "Product Name": "JUST ESSENTIALS by ASDA Salad Tomatoes",
+  "Price in GBP": 0.99,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/tomatoes-peppers\/just-essentials-by-asda-salad-tomatoes\/910003089051",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054781579571?fmt=webp"
+ },
+ {
+  "Product_id": 10,
+  "Product Name": "ASDA British Fluffy & Golden Large Baking Potatoes",
+  "Price in GBP": 0.79,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/baking-jacket-potatoes\/asda-british-fluffy-golden-large-baking-potatoes\/24932",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/0000023013575?fmt=webp"
+ },
+ {
+  "Product_id": 11,
+  "Product Name": "ASDA Crunchy & Fragrant Brown Onions",
+  "Price in GBP": 0.99,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/onions-leeks\/asda-crunchy-fragrant-brown-onions\/37261395",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5050854514906?fmt=webp"
+ },
+ {
+  "Product_id": 12,
+  "Product Name": "ASDA 3 Sweet & Crunchy Red Onions",
+  "Price in GBP": 0.95,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/onions-leeks\/asda-3-sweet-crunchy-red-onions\/910003012448",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054781511915?fmt=webp"
+ },
+ {
+  "Product_id": 13,
+  "Product Name": "ASDA Mild & Tender Baby Button Mushrooms",
+  "Price in GBP": 0.95,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/mushrooms\/asda-mild-tender-baby-button-mushrooms\/910003088989",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054781579656?fmt=webp"
+ },
+ {
+  "Product_id": 14,
+  "Product Name": "JUST ESSENTIALS by ASDA Mixed Peppers 3",
+  "Price in GBP": 1.59,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/tomatoes-peppers\/just-essentials-by-asda-mixed-peppers-colour-may-vary\/910003187659",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054781580072?fmt=webp"
+ },
+ {
+  "Product_id": 15,
+  "Product Name": "ASDA 4 Fragrant & Bold Garlic",
+  "Price in GBP": 0.93,
+  "Category": "Fresh Food",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/garlic-ginger\/asda-4-fragrant-bold-garlic\/1000383261223",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5063089777138?fmt=webp"
+ },
+ {
+  "Product_id": 16,
+  "Product Name": "ASDA British Milk Skimmed 2 Pints",
+  "Price in GBP": 1.2,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/skimmed-1-fat-milk\/asda-british-milk-skimmed-2-pints\/23422",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/20411978?fmt=webp"
+ },
+ {
+  "Product_id": 17,
+  "Product Name": "Arla LactoFREE Fresh Semi Skimmed Milk",
+  "Price in GBP": 1.68,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/lactose-free-milk\/arla-lacto-free-fresh-semi-skimmed-milk\/17505545",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5000181028133?fmt=webp"
+ },
+ {
+  "Product_id": 18,
+  "Product Name": "ASDA Creamy Greek Style Yogurt 1kg",
+  "Price in GBP": 1.84,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/natural-greek-yogurts\/asda-creamy-greek-style-yogurt-1-kg\/910000773349",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5052449437362?fmt=webp"
+ },
+ {
+  "Product_id": 19,
+  "Product Name": "\nASDA Fat Free Greek Style Yogurt 500g",
+  "Price in GBP": 1.06,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/natural-greek-yogurts\/asda-fat-free-greek-style-yogurt-500-g\/910000461906",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5052449330625?fmt=webp"
+ },
+ {
+  "Product_id": 20,
+  "Product Name": "ASDA British Salted Butter 250g",
+  "Price in GBP": 1.99,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/block-butter\/asda-british-salted-butter-250-g\/910000418944",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5051413679968?fmt=webp"
+ },
+ {
+  "Product_id": 21,
+  "Product Name": "ASDA British Unsalted Butter 250g",
+  "Price in GBP": 1.99,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/block-butter\/asda-british-unsalted-butter-250-g\/910000419159",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5051413679975?fmt=webp"
+ },
+ {
+  "Product_id": 22,
+  "Product Name": "ASDA British Mature Grated Cheddar 250g",
+  "Price in GBP": 2.55,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/grated-sliced-cheese\/asda-british-mature-grated-cheddar-250-g\/910001331807",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054070275603?fmt=webp"
+ },
+ {
+  "Product_id": 23,
+  "Product Name": "ASDA 10 Mozzarella Cheese Slices",
+  "Price in GBP": 2.55,
+  "Category": "Dairy",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/grated-sliced-cheese\/asda-10-mozzarella-cheese-slices\/910001257216",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054070150290?fmt=webp"
+ },
+ {
+  "Product_id": 24,
+  "Product Name": "ASDA 12 Medium Free Range Eggs",
+  "Price in GBP": 2.7,
+  "Category": "Poultry & Meat",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/free-range-eggs\/asda-12-medium-free-range-eggs\/1049683",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/27348048?fmt=webp"
+ },
+ {
+  "Product_id": 25,
+  "Product Name": "ASDA Organic Free Range 6 Mixed Eggs",
+  "Price in GBP": 2.5,
+  "Category": "Poultry & Meat",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/organic-eggs\/asda-organic-free-range-6-mixed-eggs\/910000053377",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5051413459478?fmt=webp"
+ },
+ {
+  "Product_id": 26,
+  "Product Name": "ASDA Tender Chicken Breast Fillets",
+  "Price in GBP": 5.98,
+  "Category": "Poultry & Meat",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/chicken-breasts\/asda-tender-chicken-breast-fillets\/910001450076",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5054070266106?fmt=webp"
+ },
+ {
+  "Product_id": 27,
+  "Product Name": "ASDA Succulent Chicken Drumsticks",
+  "Price in GBP": 2.98,
+  "Category": "Poultry & Meat",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/chicken-thighs-drumsticks\/asda-succulent-chicken-drumsticks\/910000981724",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5052449753554?fmt=webp"
+ },
+ {
+  "Product_id": 28,
+  "Product Name": "JUST ESSENTIALS by ASDA Chicken Wings",
+  "Price in GBP": 2.41,
+  "Category": "Poultry & Meat",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/chicken-thighs-drumsticks\/just-essentials-by-asda-chicken-wings\/1000362670893",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5057172863495?fmt=webp"
+ },
+ {
+  "Product_id": 29,
+  "Product Name": "Diet Coke 2l",
+  "Price in GBP": 1.98,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/sugar-free-diet-cola\/diet-coke-2-l\/1000027469746",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5449000673039?fmt=webp"
+ },
+ {
+  "Product_id": 30,
+  "Product Name": "Pepsi Max 2l",
+  "Price in GBP": 1.68,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/sugar-free-diet-cola\/pepsi-max-2-litres\/19081",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/4060800103307?fmt=webp"
+ },
+ {
+  "Product_id": 31,
+  "Product Name": "ASDA Orange Juice from Concentrate 1 Litre",
+  "Price in GBP": 1.23,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/long-life-orange-juice\/asda-orange-juice-from-concentrate-1-litre\/1000383192388",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5063089223727?fmt=webp"
+ },
+ {
+  "Product_id": 32,
+  "Product Name": "Nescafe Gold Blend Instant Coffee",
+  "Price in GBP": 5.98,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/premium-instant-coffee\/nescafe-gold-blend-instant-coffee\/1000003408016",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/7613036077514?fmt=webp"
+ },
+ {
+  "Product_id": 33,
+  "Product Name": "Walkers Classic Variety Multipack Crisps",
+  "Price in GBP": 3,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/large-multipack-crisps-10-packs\/walkers-classic-variety-multipack-crisps\/1000022626813",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5000328992594?fmt=webp"
+ },
+ {
+  "Product_id": 34,
+  "Product Name": "Hellmann's Real Mayonnaise Squeezy 580ml",
+  "Price in GBP": 2.75,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/mayonnaise\/hellmanns-real-mayonnaise\/1000383171226",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/8720182592446_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=BaDSN1&fmt=webp&dpr=off&fit=constrain,1&wid=564&hei=564"
+ },
+ {
+  "Product_id": 35,
+  "Product Name": "Heinz 50% Less Sugar & Salt Tomato Ketchup",
+  "Price in GBP": 3.58,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/tomato-ketchup\/heinz-50-less-sugar-salt-tomato-ketchup\/1000351011061",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/8715700423951_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=tLUSD0&fmt=webp&dpr=off&fit=constrain,1&wid=564&hei=564"
+ },
+ {
+  "Product_id": 36,
+  "Product Name": "Strawberry jam (454gms)",
+  "Price in GBP": 0.89,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/jams-curds\/asda-fruity-seedless-strawberry-jam-454-g\/1000219339178",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5057172384051?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 37,
+  "Product Name": "Nutella Hazelnut Spread with Cocoa 1000g",
+  "Price in GBP": 7,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/chocolate-sweet-spreads\/nutella-hazelnut-spread-with-cocoa-1000-g\/910000821658",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/3017624010701_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=yX3TL0&fmt=webp&dpr=off&fit=constrain,1&wid=564&hei=564"
+ },
+ {
+  "Product_id": 38,
+  "Product Name": "ASDA Smooth Peanut Butter 340g",
+  "Price in GBP": 1.8,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/nut-butters\/asda-smooth-peanut-butter-340-g\/1000263159234",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5057172515424_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=xjrS_0&fmt=webp&dpr=off&fit=constrain,1&wid=864&hei=864"
+ },
+ {
+  "Product_id": 39,
+  "Product Name": "Kinder Bueno Hazelnuts & Milk Chocolate Bars",
+  "Price in GBP": 2.7,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/multipack-chocolate\/kinder-bueno-hazelnuts-milk-chocolate-bars-multipack-4-x\/13852635",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5020411113828_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=ia8S13&fmt=webp&dpr=off&fit=constrain,1&wid=564&hei=564"
+ },
+ {
+  "Product_id": 40,
+  "Product Name": "Colgate Sensitive Instant Relief Repair + Multi-Protection Toothpaste 75ml",
+  "Price in GBP": 3,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/sensitive-toothpaste\/colgate-sensitive-instant-relief-repair-multi-protection-toothpaste-75-ml\/1000383217716",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/8718951635012?fmt=webp"
+ },
+ {
+  "Product_id": 41,
+  "Product Name": "TRESemme Rich Moisture Shampoo",
+  "Price in GBP": 3.78,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/shampoo\/tre-semme-rich-moisture-shampoo\/1000258567982",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/8717163902936?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 42,
+  "Product Name": "Radox Mineral Therapy Body Wash Feel Awake",
+  "Price in GBP": 0.98,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/shower-gel-body-wash\/radox-mineral-therapy-body-wash-feel-awake\/1000383172437",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/8720181336034?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 43,
+  "Product Name": "Listerine Essentials Cool Mint Mouthwash 500ml",
+  "Price in GBP": 4.98,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/everyday-dental-care\/listerine-cool-mint-antibacterial-mouthwash\/910000280906",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/3574660520132?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 44,
+  "Product Name": "ASDA Alcohol Free Cool Mint Mouthwash 500ml",
+  "Price in GBP": 0.43,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/everyday-mouthwash\/just-essentials-by-asda-alcohol-free-cool-mint-mouthwash-500-ml\/1000054991311",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5054781908364?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 45,
+  "Product Name": "ASDA Citrus Burst Thick Bleach 750ml",
+  "Price in GBP": 0.67,
+  "Category": "Household",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/bleach-disinfectants\/asda-citrus-burst-thick-bleach-750-ml\/1000119983596",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5057172102679?$ProdList2x$=&fmt=webp"
+ },
+ {
+  "Product_id": 46,
+  "Product Name": "Andrex Complete Clean Toilet Tissue 9 Rolls",
+  "Price in GBP": 5.88,
+  "Category": "Household",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/standard-toilet-roll\/andrex-complete-clean-toilet-tissue-9-rolls\/1000321764788",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/asdagroceries\/5029053578231_T1?defaultImage=asdagroceries\/noImage&resMode=sharp2&id=4xiSd3&fmt=webp&dpr=off&fit=constrain,1&wid=564&hei=564"
+ },
+ {
+  "Product_id": 47,
+  "Product Name": "ASDA Sunflower Oil 1 Litre",
+  "Price in GBP": 1.99,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/cooking-oil\/asda-sunflower-oil-1-litre\/47279876",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/20341077?fmt=webp"
+ },
+ {
+  "Product_id": 48,
+  "Product Name": "\nASDA Extra Virgin Olive Oil",
+  "Price in GBP": 5.5,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/olive-oil\/asda-extra-virgin-olive-oil\/1000219339224",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/5057172338665?fmt=webp"
+ },
+ {
+  "Product_id": 49,
+  "Product Name": "\nDove Beauty Bar Original 6 x 90 g",
+  "Price in GBP": 3.98,
+  "Category": "Health & Beauty",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/bar-soap\/dove-beauty-bar-original-6-x-90-g\/1000373038885",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/8720181218293?fmt=webp"
+ },
+ {
+  "Product_id": 50,
+  "Product Name": "Warburtons Medium Soft White 800g",
+  "Price in GBP": 1.4,
+  "Category": "Food & Beverages",
+  "Quantity\/Package_size": 1,
+  "Product URL": "https:\/\/groceries.asda.com\/product\/white-bread\/warburtons-medium-soft-white-800-g\/34536",
+  "Image URL": "https:\/\/ui.assets-asda.com\/dm\/8720181218293?fmt=webp"
+ }
+]
